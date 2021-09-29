@@ -1,0 +1,20 @@
+# スタイルの名前を指定してください。
+$name: My Style
+
+# 主な配色
+$background-color: "#F84646"
+$water-color: "#FAAF25"
+$road-color: "#FFFFFF"
+
+
+# 以下は上級者専用
+version: 8
+name: $name
+metadata: {}
+sources:
+  geolonia:
+    type: vector
+    url: https://api.geolonia.com/v1/sources?key=YOUR-API-KEY
+sprite: https://sprites.geolonia.com/basic-white
+glyphs: https://glyphs.geolonia.com/{fontstack}/{range}.pbf
+layers: !!inc/file ./layers/layers.yml
